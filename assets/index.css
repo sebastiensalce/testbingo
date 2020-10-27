@@ -1,0 +1,117 @@
+body {
+    background: url('unicorn.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    text-align: center;
+    min-height: 100vh;
+    margin: 0;
+    min-width: 1100px;
+}
+
+body > div {
+    width: 95%;
+    margin: 2rem auto;
+    border-radius: 3px;
+    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2),0 0 3px rgba(0, 0, 0, 0.2);
+}
+
+.scoreboard {
+    width: 90%;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1),0 0 4px rgba(0, 0, 0, 0.1);
+    justify-content: space-evenly;
+}
+
+.scoreboard > div {
+    padding: 3% 5%;
+}
+
+#score-title {
+    color: #db2f2f;
+}
+
+#score {
+    font-weight: bold;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin: 0.75rem;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    margin: 0 0.25rem;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.769);
+}
+
+.bingo-table {
+    border-spacing: 0.4rem;
+    margin: auto;
+}
+
+.bingo-table td {
+    padding: 0;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: #bbbbbb;
+    box-shadow: 0 0 2px rgba(0,0,0,.12),0 2px 2px rgba(0,0,0,.2);
+    transition: all .2s ease-in-out;
+}
+
+.bingo-table td:hover {
+    background-color: #F9F9F9;
+}
+
+.bingo-table input {
+    display: none;
+}
+
+.bingo-table label {
+    cursor: pointer;
+    display: table;
+    border-radius: 5px;
+    transition: all .5s ease-in-out;
+}
+
+/*.bingo-table input:checked ~ label {*/
+.bingo-table td.checked {
+    background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255,255, 255, 0.7)), url("zanyface.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@font-face {
+    font-family: 'Ubuntu-R';
+    src: url('ComicRelief.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+textarea {
+    resize: none;
+    width: 90%;
+    text-align: center;
+    font-size: 13px;
+    height: 22px;
+}
+
+* {
+    font-family: "Ubuntu-R"
+}
