@@ -25,10 +25,10 @@ function toggleDesc() {
     let all_checkboxes = document.getElementsByTagName("label");
     for (let i = 0; i < all_checkboxes.length; i++) {
         if (this.innerHTML == "Masquer les descriptions") {
-            all_checkboxes[i].children[1].classList.add("hidden");
+            all_checkboxes[i].classList.add("hidden-desc");
         }
         else {
-            all_checkboxes[i].children[1].classList.remove("hidden");
+            all_checkboxes[i].classList.remove("hidden-desc");
         }
     }
     if (this.innerHTML == "Masquer les descriptions") {

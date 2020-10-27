@@ -4,7 +4,7 @@ body {
     text-align: center;
     min-height: 100vh;
     margin: 0;
-    min-width: 1100px;
+    min-width: 1024px;
 }
 
 body > div {
@@ -115,8 +115,12 @@ button {
     background-position: center;
 }
 
-.bingo-table p.hidden {
+.bingo-table .hidden-desc > p {
     display: none;
+}
+
+.bingo-table .hidden-desc > h2 {
+    font-size: 18px;
 }
 
 @font-face {
