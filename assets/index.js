@@ -13,7 +13,7 @@ window.onload = function() {
                 this.parentNode.classList.remove("checked");
             }
             history.replaceState(undefined, undefined, gen_anchor());
-            document.getElementById("sharelink").value = window.location;
+            document.getElementById("sh").value = window.location;
             refreshScores();
         });
     }
@@ -129,7 +129,7 @@ function load_anchor() {
             all_checkboxes[hashindex].parentNode.classList.add("checked");
         }
     }
-    document.getElementById("sharelink").value = window.location;
+    document.getElementById("sh").value = window.location;
     refreshScores();
 }
 
